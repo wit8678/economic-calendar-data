@@ -2619,8 +2619,8 @@
       "name": "한국",
       "value": "3.00%",
       "decidedOn": "2026-10-22",
-      "sourceName": "한국은행 금통위 결정 (경북매일 2026-10-22 보도)",
-      "sourceUrl": "https://kbmaeil.com/article/20261022500138",
+      "sourceName": "한국은행 통화정책방향 (2026.10.22 금통위 · 한국은행 원문, KDI 경제정보센터 게재)",
+      "sourceUrl": "https://eiec.kdi.re.kr/policy/materialView.do?num=288401",
       "checkedAt": "2026-11-08"
     },
     {
@@ -2628,8 +2628,8 @@
       "name": "미국",
       "value": "3.75~4.00%",
       "decidedOn": "2026-10-28",
-      "sourceName": "연준 FOMC 성명 (정책금리 목표 범위)",
-      "sourceUrl": "https://www.securities.io/fomc-holds-federal-funds-target-range-as-two-members-dissent/",
+      "sourceName": "미국 연방준비제도 FOMC 성명 (2026.10.28)",
+      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
       "checkedAt": "2026-11-08"
     },
     {
@@ -2637,8 +2637,8 @@
       "name": "일본",
       "value": "1.25%",
       "decidedOn": "2026-10-30",
-      "sourceName": "일본은행 금융정책결정회의 (Trading Economics 보도)",
-      "sourceUrl": "https://tradingeconomics.com/japan/interest-rate",
+      "sourceName": "일본은행 금융정책 성명 (2026.10.30)",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
       "checkedAt": "2026-11-08"
     }
   ],
