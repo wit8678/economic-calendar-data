@@ -46,9 +46,9 @@ title: 경제일정 개인정보처리방침
 
 | 서비스 | 받는 정보 |
 |---|---|
-| GitHub (raw.githubusercontent.com) | 경제 일정 파일, 시장 심리 지수 |
+| GitHub (raw.githubusercontent.com) | 경제 일정 파일, 시장 심리 지수, 환율 (한국수출입은행 매매기준율) |
 | 미국 노동통계국(BLS)·경제분석국(BEA) | 미국 경제지표 발표 일정 |
-| Frankfurter (api.frankfurter.app) | 환율 (유럽중앙은행 기준환율) |
+| Frankfurter (api.frankfurter.app) | 예비 환율 (유럽중앙은행 기준환율, GitHub 환율을 받지 못할 때) |
 
 ## 5. 광고 (Google AdMob)
 
@@ -97,3 +97,4 @@ title: 경제일정 개인정보처리방침
 이 방침이 바뀌면 시행 7일 전부터 이 페이지에 알립니다.
 
 - 2026년 11월 9일: 최초 시행
+- 2026년 11월 10일: 환율 출처 변경 (한국수출입은행 매매기준율, 개인정보 처리 내용 변경 없음)
