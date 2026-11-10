@@ -1,0 +1,38 @@
+# 경제일정 앱: 한국수출입은행 환율 매일 갱신 (영업일)
+# - 수출입은행은 영업일 오전 11시쯤 환율을 고시 → 한국 시간 11:35, 14:35 두 번 확인
+# - 수동 실행: 저장소 > Actions > "환율 갱신" > Run workflow
+name: 환율 갱신
+
+on:
+  schedule:
+    - cron: "35 2 * * 1-5"   # 월~금 02:35 UTC (한국 11:35)
+    - cron: "35 5 * * 1-5"   # 월~금 05:35 UTC (한국 14:35, 늦게 고시될 때 대비)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 환율 받기
+        env:
+          KOREAEXIM_API_KEY: ${{ secrets.KOREAEXIM_API_KEY }}
+        run: python3 scripts/update_fx.py
+      - name: 바뀌었으면 저장
+        run: |
+          if [ ! -f fx.json ]; then echo "fx.json 없음"; exit 0; fi
+          git add fx.json
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "환율 자동 갱신"
+            git push
+          fi
