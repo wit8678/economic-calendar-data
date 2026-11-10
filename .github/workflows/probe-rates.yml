@@ -1,0 +1,18 @@
+# 임시 확인용 (확인 후 삭제): 국제금리·대출금리 항목 보기
+name: 금리 항목 확인
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 항목 출력
+        env:
+          KOREAEXIM_API_KEY: ${{ secrets.KOREAEXIM_API_KEY }}
+        run: python3 scripts/probe_rates.py
