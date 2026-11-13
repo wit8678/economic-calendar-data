@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-08T13:09:39Z",
+  "updatedAt": "2026-11-13T01:20:02Z",
   "note": "한국·미국 핵심 경제 일정, 미국 빅테크 실적, 한국·미국 증시 휴장일, 한국 공휴일. 실적은 회사 IR에 공지된 확정 일정만 넣습니다. 날짜를 바꿀 때는 출처에서 확인 후 updatedAt을 현재 시각(UTC)으로 바꾸세요.",
   "events": [
     {
@@ -2643,9 +2643,9 @@
     }
   ],
   "marketSentiment": {
-    "score": 47,
-    "asOf": "2026-10-30",
-    "stressValue": -0.5224,
+    "score": 43,
+    "asOf": "2026-11-06",
+    "stressValue": -0.4918,
     "source": "Federal Reserve Bank of St. Louis, STLFSI4, retrieved from FRED"
   }
 }
